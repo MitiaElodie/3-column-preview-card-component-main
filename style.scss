@@ -1,5 +1,5 @@
 $card-length: 300px;
-$border-radius: 20px;
+$border-radius: 10px;
 $sedans-color: hsl(31, 77%, 52%);
 $suvs-color: hsl(184, 100%, 22%);
 $luxury-color: hsl(179, 100%, 13%);
@@ -29,14 +29,20 @@ body {
 
    &__content {
       display: flex;
+      margin: 10px;
+      border-radius: $border-radius;
+      overflow: hidden;
    }
 
    &__title {
       font-family: 'Big Shoulders Display', sans-serif;
+      padding: 30px 0px;
+      text-transform: uppercase;
    }
 
    &__choice {
-      width: $card-length;
+      max-width: $card-length;
+      padding: 40px;
 
       &--sedans {
          background-color: $sedans-color;
@@ -53,6 +59,8 @@ body {
 
    &__description {
       color: $paragraph-color;
+      line-height: 1.5;
+      padding-bottom: 60px;
    }
 
    &__btn {

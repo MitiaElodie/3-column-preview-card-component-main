@@ -7,6 +7,7 @@
 body {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
+  color: hsl(0deg, 0%, 95%);
 }
 
 .car__container {
@@ -23,6 +24,49 @@ body {
 }
 .car__choice {
   width: 300px;
+}
+.car__choice--sedans {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.car__choice--suvs {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.car__choice--luxury {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.car__description {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.car__btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 900;
+  background-color: hsl(0deg, 0%, 95%);
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: solid hsl(0deg, 0%, 95%);
+  transition: all 200ms ease-in-out;
+}
+.car__btn--sedans {
+  color: hsl(31deg, 77%, 52%);
+}
+.car__btn--sedans:hover {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.car__btn--suvs {
+  color: hsl(184deg, 100%, 22%);
+}
+.car__btn--suvs:hover {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.car__btn--luxury {
+  color: hsl(179deg, 100%, 13%);
+}
+.car__btn--luxury:hover {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.car__btn:hover {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 95%);
 }
 
 .attribution {

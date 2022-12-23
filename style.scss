@@ -16,6 +16,7 @@ $font-size: 15px;
 body {
    font-family: 'Lexend Deca', sans-serif;
    font-size: $font-size;
+   color: $very-light-grey;
 }
 
 .car {
@@ -36,6 +37,62 @@ body {
 
    &__choice {
       width: $card-length;
+
+      &--sedans {
+         background-color: $sedans-color;
+      }
+
+      &--suvs {
+         background-color: $suvs-color;
+      }
+
+      &--luxury {
+         background-color: $luxury-color;
+      }
+   }
+
+   &__description {
+      color: $paragraph-color;
+   }
+
+   &__btn {
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 900;
+      background-color: $very-light-grey;
+      padding: 10px 25px;
+      border-radius: 25px;
+      border: solid $very-light-grey;
+      transition: all 200ms ease-in-out;
+
+      &--sedans {
+         color: $sedans-color;
+
+         &:hover {
+            background-color: $sedans-color;
+         }
+      }
+
+      &--suvs {
+         color: $suvs-color;
+
+         &:hover {
+            background-color: $suvs-color;
+         }
+      }
+
+      &--luxury {
+         color: $luxury-color;
+
+         &:hover {
+            background-color: $luxury-color;
+         }
+      }
+  
+      &:hover {
+         cursor: pointer;
+         color: $very-light-grey;
+      }
+
    }
 }
 

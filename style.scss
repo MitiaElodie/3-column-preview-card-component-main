@@ -60,17 +60,18 @@ body {
    &__description {
       color: $paragraph-color;
       line-height: 1.5;
-      padding-bottom: 60px;
+      margin-bottom: 60px;
    }
 
    &__btn {
       font-family: 'Lexend Deca', sans-serif;
-      font-weight: 900;
+      font-weight: 600;
       background-color: $very-light-grey;
       padding: 10px 25px;
       border-radius: 25px;
-      border: solid $very-light-grey;
+      border: 2px solid $very-light-grey;
       transition: all 200ms ease-in-out;
+      text-transform: capitalize;
 
       &--sedans {
          color: $sedans-color;
@@ -108,6 +109,10 @@ body {
 .car {
    &__content {
       flex-direction: column;
+   }
+
+   &__description {
+      margin-bottom: 20px;
    }
 }
 }

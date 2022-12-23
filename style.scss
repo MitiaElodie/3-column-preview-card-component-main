@@ -1,2 +1,43 @@
+$card-length: 300px;
+$border-radius: 20px;
+$sedans-color: hsl(31, 77%, 52%);
+$suvs-color: hsl(184, 100%, 22%);
+$luxury-color: hsl(179, 100%, 13%);
+$paragraph-color: hsla(0, 0%, 100%, 0.75);
+$very-light-grey: hsl(0, 0%, 95%);
+$font-size: 15px;
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: $font-size;
+}
+
+.car {
+   &__container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__content {
+      display: flex;
+   }
+
+   &__title {
+      font-family: 'Big Shoulders Display', sans-serif;
+   }
+
+   &__choice {
+      width: $card-length;
+   }
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

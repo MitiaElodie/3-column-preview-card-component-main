@@ -11,7 +11,7 @@ body {
 }
 
 .car__container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,9 +77,15 @@ body {
   color: hsl(0deg, 0%, 95%);
 }
 
+@media screen and (max-width: 600px) {
+  .car__content {
+    flex-direction: column;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: black;
 }
 
 .attribution a {
